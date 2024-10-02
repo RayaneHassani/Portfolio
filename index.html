@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mon Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Typographie style Apple */
+        html, body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Header Section -->
+    <header class="fixed top-0 w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center p-6">
+            <h1 class="text-3xl font-semibold">Mon Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-8 text-lg">
+                    <li><a href="#home" class="hover:text-gray-500">Accueil</a></li>
+                    <li><a href="#about" class="hover:text-gray-500">À propos</a></li>
+                    <li><a href="#projects" class="hover:text-gray-500">Projets</a></li>
+                    <li><a href="#contact" class="hover:text-gray-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex items-center justify-center bg-gray-100">
+        <div class="text-center">
+            <h2 class="text-5xl font-bold mb-6">Bienvenue dans mon univers</h2>
+            <p class="text-xl text-gray-600 mb-12">Créatif, Développeur & Passionné par le design moderne</p>
+            <a href="#projects" class="px-8 py-4 bg-gray-900 text-white rounded-full text-lg font-semibold hover:bg-gray-700 transition">Voir mes projets</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-semibold mb-4">À propos de moi</h3>
+                <p class="text-xl text-gray-600">Je suis un développeur passionné avec un goût prononcé pour le design élégant et minimaliste. Mon expertise couvre le développement web, le design UX/UI et la création d’expériences utilisateurs intuitives.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="text-2xl font-semibold mb-4">Compétences techniques</h4>
+                    <ul class="list-disc list-inside text-lg text-gray-700">
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Tailwind CSS, React.js</li>
+                        <li>Développement mobile avec React Native</li>
+                        <li>Gestion de projet agile (Scrum, Kanban)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-semibold mb-4">Outils de design</h4>
+                    <ul class="list-disc list-inside text-lg text-gray-700">
+                        <li>Figma, Sketch</li>
+                        <li>Adobe XD, Illustrator</li>
+                        <li>Prototypage interactif</li>
+                        <li>Animations UI/UX</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-semibold mb-4">Mes Projets</h3>
+                <p class="text-xl text-gray-600">Voici quelques projets sur lesquels j'ai travaillé récemment.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold mb-4">Projet 1</h4>
+                        <p class="text-gray-600">Description du projet 1, expliquant les technologies utilisées et les fonctionnalités principales.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold mb-4">Projet 2</h4>
+                        <p class="text-gray-600">Description du projet 2, expliquant les technologies utilisées et les fonctionnalités principales.</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold mb-4">Projet 3</h4>
+                        <p class="text-gray-600">Description du projet 3, expliquant les technologies utilisées et les fonctionnalités principales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-semibold mb-4">Contactez-moi</h3>
+                <p class="text-xl text-gray-600">Vous avez un projet ou une question ? N'hésitez pas à me contacter !</p>
+            </div>
+            <form action="#" method="POST" class="max-w-xl mx-auto">
+                <div class="grid grid-cols-1 gap-6">
+                    <input type="text" placeholder="Votre nom" class="px-4 py-3 border border-gray-300 rounded-md">
+                    <input type="email" placeholder="Votre email" class="px-4 py-3 border border-gray-300 rounded-md">
+                    <textarea placeholder="Votre message" class="px-4 py-3 border border-gray-300 rounded-md h-32"></textarea>
+                    <button type="submit" class="px-8 py-4 bg-gray-900 text-white rounded-full text-lg font-semibold hover:bg-gray-700 transition">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-8 bg-gray-900 text-white text-center">
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+"# Portfolio" 
